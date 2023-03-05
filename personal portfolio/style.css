@@ -1,0 +1,444 @@
+/* ..Google Fonts.. */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 600;
+
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* HEADER SECTION STARTS */
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 1px 5px black;
+}
+.logo span{
+    color: rgb(5, 211, 211);
+}
+nav .menu {
+    margin-right: 100px;
+}
+
+.menu ul li {
+    display: inline-block;
+
+}
+.menu ul li a {
+    padding: 10px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-shadow: 2px 1px 5px black;
+}
+.menu ul li a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    
+}
+
+.hero-section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.change_content:after {
+    content: '';
+    animation: changetext 15s linear infinite;
+    color:  rgb(5, 211, 211);
+    font-size: 30px;
+    text-shadow: 2px 1px 5px black;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Web Developer";
+    }
+
+    15% {
+        content: "Java Developer";
+    }
+
+    35% {
+        content: "Web Designing";
+    }
+ 
+    45% {
+        content: "Web Developer";
+    }
+
+    65% {
+        content: "Java Developer";
+    }
+
+    85% {
+        content: "Web Designing";
+    }
+
+    100% {
+        content: "Web Developer";
+    }
+}
+.left span{
+    letter-spacing: 3px;
+    font-size: 25px;
+    color:  rgb(5, 211, 211);
+    text-shadow: 1px 2px 3px black ;
+
+}
+.download-cv{
+    color: black ;
+    background-color:rgb(5, 211, 211) ;
+    letter-spacing: 2px;
+    border: 4px solid rgb(5, 211, 211);
+    border-radius: 35px;
+    font-weight: bold;
+}
+.download-cv:hover{
+    text-shadow: 1px 2px 3px black;
+    border-bottom: 2px solid black ;
+    border-right: 2px solid black ;
+}
+.right img{
+    /* border-bottom: 2PX SOLid black; */
+    box-shadow: 5PX 10px 50px rgba(4, 247, 247, 0.507);
+}
+
+.social-link{
+    display: flex;
+}
+.social-link ul{
+    padding: 50px;
+    display: flex;
+    height: 126px;
+    width: 393px;
+    margin: auto;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: rgb(5, 211, 211);
+    text-shadow: 1px 1px 3px black;
+}
+/* header section end */
+
+/* About section starts */
+.about {
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 1px 5px black;
+    justify-content: center;
+}
+.about span{
+    color: rgb(5, 211, 211);
+}
+
+.aboutsection{
+    display: flex;
+    justify-content: space-around;
+
+}
+.leftabout{
+    display: flex;
+
+}
+.leftabout img{
+    box-shadow: 5PX 10px 50px rgb(6, 15, 15);
+    margin-left: 80px;
+}
+.rightabout{
+    margin-left: 23px;
+}
+.rightabout span{
+    letter-spacing: 3px;
+    font-size: 25px;
+    color:  rgb(5, 211, 211);
+    text-shadow: 1px 2px 3px black ;
+}
+
+/* about section end */
+/* education section start */
+.education{
+    margin-left: 100px;
+}
+.edu{
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 2px 5px black;
+    justify-content: center;
+}
+.content{
+    margin-left: 100px;
+    padding: 0px 30px;
+    border-left: 3px solid black;
+}
+.content .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid aquamarine;
+     box-shadow: 1px 2px 1px rgb(6, 224, 224); 
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.content .box:hover{
+     box-shadow: 5PX 10px 50px rgb(6, 15, 15);
+
+}
+.content .box h4{
+    color: rgb(5, 211, 211);
+    text-shadow: 1px 1px 1px black;
+}
+.content .box P{
+    font-weight: bold;
+    font-size: 15PX;
+}
+.content .box P span{
+    text-shadow:  0px 1px 1px  black;
+}
+
+/* Eucation section end */
+/* skill css starts */
+#skills{
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    background-color: rgba(0,0,0,0.000);
+ } 
+.skill{
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 1px 5px black;
+    justify-content: center;
+}
+.skill span{
+    color: rgb(5, 211, 211) ;
+}
+.skill-heading{
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 1px 5px black;
+    justify-content: center;
+}
+.skill-main{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15PX;
+}
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill-bar .skill-box{
+    width: 100%;
+    height: 10px;
+    position:relative;
+    background-color: rgba(0,0,0,0.199);
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.skill-bar .skill-box span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(5, 211, 211);
+    border-radius: 25PX;
+}
+.skill-bar .skill-box .html{
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.skill-bar .skill-box .css{
+    width: 75%;
+    animation: css 3s;
+}
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.skill-bar .skill-box .javascript{
+    width: 60%;
+    animation: javascript 3s;
+}
+@keyframes javascript {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skill-bar .skill-box .java{
+    width: 78%;
+    animation: java 3s;
+}
+@keyframes java {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 78%;
+    }
+}
+.skill-bar .skill-box .mysql{
+    width: 67%;
+    animation: mysql 3s;
+}
+@keyframes mysql {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 67%;
+    }
+}
+.skill-bar .skill-box .webdesign{
+    width: 60%;
+    animation: webdesign 3s;
+}
+@keyframes webdesign {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+/* skill css ends */
+/* contact section css starts */
+.contactme{
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-right: 13%;
+    text-shadow: 2px 1px 5px black;
+    justify-content: center;
+}
+.contactme span{
+    color: rgb(5, 211, 211) ;
+}
+.input {
+    margin-left: 330px;
+    width: 38%;
+    color: black;
+    BORDER: 2PX SOLID AQUA;
+    BORDER-RADIUS: 7PX;
+    MARGIN-TOP: 34PX;
+    PADDING: 5PX;
+    box-shadow: 5px 10px 20px rgb(5, 211, 211);
+}
+.input:hover{
+    box-shadow: 5PX 10px 50px rgb(6, 15, 15);
+
+}
+/* contact me section ends */
+/* footer section  starts*/
+.social-link{
+    display: flex;
+}
+.social-link ul{
+    padding: 50px;
+    display: flex;
+    height: 126px;
+    width: 393px;
+    margin: auto;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: aqua;
+}
+
+.quick-link{
+    display: flex;
+    width: 519px;
+    height: 70px;
+    margin: auto;
+}
+.quick-link ul{
+    display: flex;
+}
+.quick-link a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: black;
+    text-shadow: 2px 1px 5px black;
+}
+.quick-link a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.outer-footer{
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    background-color: rgba(39, 138, 138, 0.2);
+}
+/* footer section ends */
